@@ -9,4 +9,11 @@ public interface Sortable {
      * 将传入的nums按照从小到大的顺序排列
      */
     void sort(int[] nums);
+
+    /**
+     * 交换顺序
+     */
+    void swap(int[] nums, int i, int j);
+
+    void print(int[] nums);
 }

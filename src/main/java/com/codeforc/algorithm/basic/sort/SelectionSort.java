@@ -4,7 +4,7 @@ package com.codeforc.algorithm.basic.sort;
  * 选择排序 O(n^2)
  * 遍历数据，找到最小的数，从而和下标最小的元素交换位置。然后每次下标递增1，重复上诉过程。完成排序工作。
  */
-public class SelectionSort implements Sortable {
+public class SelectionSort extends AbstractSort {
 
     @Override
     public void sort(int[] nums) {
@@ -18,12 +18,6 @@ public class SelectionSort implements Sortable {
             swap(nums, i, minIndex);
         }
         System.out.println(nums);
-    }
-
-    private void swap(int[] nums, int i, int j) {
-        int tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
     }
 
 }
