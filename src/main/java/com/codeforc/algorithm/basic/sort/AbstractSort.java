@@ -8,9 +8,9 @@ public abstract class AbstractSort implements Sortable {
 
     @Override
     public void swap(int[] nums, int i, int j) {
-        int temp = nums[j];
-        nums[j] = nums[i];
-        nums[i] = temp;
+        nums[i] ^= nums[j];
+        nums[j] ^= nums[i];
+        nums[i] ^= nums[j];
     }
 
     @Override
