@@ -9,7 +9,6 @@ public class SelectionSort extends AbstractSort {
     @Override
     public void sort(int[] nums) {
         if(nums == null || nums.length < 2) return;
-
         for(int i = 0; i < nums.length; i++) {
             int minIndex = i;
             for(int j = i+1; j < nums.length; j++) {
@@ -17,7 +16,10 @@ public class SelectionSort extends AbstractSort {
             }
             swap(nums, i, minIndex);
         }
-        System.out.println(nums);
+    }
+
+    public static void main(String[] args) {
+        ArrayCheckWare.checkArraySort(new SelectionSort());
     }
 
 }

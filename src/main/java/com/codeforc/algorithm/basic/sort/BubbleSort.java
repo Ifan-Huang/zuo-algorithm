@@ -21,12 +21,7 @@ public class BubbleSort extends AbstractSort {
     }
 
     public static void main(String[] args) {
-        BubbleSort bubbleSort = new BubbleSort();
-        int[] nums = {3, 5, 1, 2, 9, 1};
-        bubbleSort.sort(nums);
-        for (int num : nums) {
-            System.out.println(num);
-        }
+        ArrayCheckWare.checkArraySort(new BubbleSort());
     }
 
 }

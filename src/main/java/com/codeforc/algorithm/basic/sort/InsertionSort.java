@@ -1,5 +1,7 @@
 package com.codeforc.algorithm.basic.sort;
 
+import java.util.Arrays;
+
 /**
  * Author: Ifan·Huang
  * Description: 插入排序，类似于扑克牌，将样本中的数据，对比，每次都是对比之前的数据，如果比当前的数据大的数据，则左移一位
@@ -17,10 +19,7 @@ public class InsertionSort extends AbstractSort {
     }
 
     public static void main(String[] args) {
-        InsertionSort insertionSort = new InsertionSort();
-        int[] nums = {3, 1, 5, 9, 10};
-        insertionSort.sort(nums);
-        insertionSort.print(nums);
-
+        ArrayCheckWare.checkArraySort(new InsertionSort());
     }
+
 }
