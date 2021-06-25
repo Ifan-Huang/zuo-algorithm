@@ -91,7 +91,7 @@ public class Linked<T> {
         values.add(33213);
         values.add(33213);
         values.add(3888);
-
+        System.out.println(values);
         System.out.println(linked);
     }
 }
