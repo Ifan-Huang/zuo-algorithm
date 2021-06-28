@@ -61,7 +61,10 @@ public class Stack<T> {
         stack.push(321);
         stack.push(322);
         stack.push(323);
-        stack.push(323);
+        Integer pop3 = stack.pop();
+        Integer pop4 = stack.pop();
+        Integer pop5 = stack.pop();
+        Integer pop6 = stack.pop();
         System.out.println(stack);
     }
 }

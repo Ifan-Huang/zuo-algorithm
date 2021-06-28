@@ -1,6 +1,7 @@
 package com.codeforc.algorithm.basic.sort;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 /**
  * Author: Ifan·Huang
@@ -42,6 +43,30 @@ public class ArrayCheckWare {
         System.out.println(success);
         return success;
     }
+
+    public static void checkArraySortTimeConsume(Collection<Sortable> sortables) {
+        for (Sortable sortable : sortables) {
+            checkArraySortTimeConsume(sortable);
+        }
+    }
+
+    public static void checkArraySortTimeConsume(Sortable sortables) {
+        int testTime = 100;
+        int maxSize = 100;
+        int maxValue = 100;
+        boolean success = true;
+        for (int i = 0; i < testTime; i++) {
+            int[] testArray = ArrayCheckWare.generateArray(maxSize, maxValue);
+            int[] copyArray = ArrayCheckWare.copyArray(testArray);
+            sortables.sortConsume(testArray);
+            Arrays.sort(copyArray);
+            if(!isEquals(testArray, copyArray)) {
+                success = false;
+                break;
+            }
+        }
+    }
+
 
     private static boolean isEquals(int[] testArray, int[] copyArray) {
         if((testArray == null && copyArray != null) || (testArray != null && copyArray == null)) return false;

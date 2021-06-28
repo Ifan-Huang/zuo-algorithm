@@ -15,5 +15,7 @@ public interface Sortable {
      */
     void swap(int[] nums, int i, int j);
 
+    void sortConsume(int[] nums);
+
     void print(int[] nums);
 }
