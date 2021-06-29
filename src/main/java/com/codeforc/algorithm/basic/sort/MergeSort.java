@@ -40,13 +40,9 @@ public class MergeSort extends AbstractSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8};
+        int[] nums = {3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8,3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8};
         MergeSort mergeSort = new MergeSort();
         mergeSort.sortConsume(nums);
         mergeSort.print(nums);
-
-        int[] nums1 = {3,1 ,2 , 5, 1, 2, 0 , -3, 9, 8};
-        SelectionSort selectionSort = new SelectionSort();
-        selectionSort.sortConsume(nums1);
     }
 }

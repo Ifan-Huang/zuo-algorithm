@@ -1,12 +1,7 @@
 package com.codeforc.algorithm.basic.sort;
 
-import com.sun.org.apache.bcel.internal.generic.Select;
-
-import javax.naming.PartialResultException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Author: Ifan·Huang

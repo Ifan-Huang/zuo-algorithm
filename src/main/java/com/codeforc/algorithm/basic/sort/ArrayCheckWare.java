@@ -51,7 +51,7 @@ public class ArrayCheckWare {
     }
 
     public static void checkArraySortTimeConsume(Sortable sortables) {
-        int testTime = 100;
+        int testTime = 10;
         int maxSize = 100;
         int maxValue = 100;
         boolean success = true;

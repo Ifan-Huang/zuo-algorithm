@@ -17,11 +17,12 @@ public abstract class AbstractSort implements Sortable {
         long before = System.currentTimeMillis();
         sort(nums);
         long after = System.currentTimeMillis();
-        System.out.println(this.getClass() + "time consume: " + (after - before) /1000 + "");
+        System.out.println(this.getClass() + "time consume: " + (after - before) + "");
     }
 
     @Override
     public void print(int[] nums) {
-        for (int num : nums) System.out.println(num);
+        String p = ",";
+        for (int num : nums) System.out.print(num + p);
     }
 }
