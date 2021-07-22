@@ -13,6 +13,12 @@ public abstract class AbstractSort implements Sortable {
         nums[i] ^= nums[j];
     }
 
+    public void swap2(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
     public void sortConsume(int[] nums) {
         long before = System.currentTimeMillis();
         sort(nums);
@@ -23,6 +29,6 @@ public abstract class AbstractSort implements Sortable {
     @Override
     public void print(int[] nums) {
         String p = ",";
-        for (int num : nums) System.out.print(num + p);
+        for (int num : nums) System.out.print(num + " ");
     }
 }
